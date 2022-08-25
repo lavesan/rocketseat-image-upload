@@ -37,11 +37,11 @@ export interface FileInputProps {
   setImageUrl: Dispatch<SetStateAction<string>>;
   localImageUrl: string;
   setLocalImageUrl: Dispatch<SetStateAction<string>>;
-  setError: UseFormSetError<FieldValues>;
+  setError: UseFormSetError<any>;
   onChange: (
     event: React.ChangeEvent<HTMLInputElement>
   ) => Promise<boolean | void>;
-  trigger: UseFormTrigger<FieldValues>;
+  trigger: UseFormTrigger<any>;
 }
 
 const FileInputBase: ForwardRefRenderFunction<
